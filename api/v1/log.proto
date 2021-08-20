@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package log.v1;
+
+option go_package = "github.com/GGiecold/api/log_v1";
+
+// Next ID: 3. Last added: offset = 2.
+message Record {
+  bytes value = 1;
+  uint64 offset = 2;
+}
+
